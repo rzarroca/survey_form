@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <title>Survey Form Project by Ricardo Zarroca</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">the beer survey</h1>
+        <p id="description">In the next survey, we´re gonna test how much you know about beer</p>
+    </header>
+    <main>
+        <form action="#" id="survey-form">
+            <fieldset>
+                <legend><h2>Allow us to know something about you:</h2></legend>
+
+                <label for="name" id="name-label">Name: </label><br>
+                <input type="text" name="name" id="name" placeholder="Boby Drinkers" required> <br>
+
+                <label for="email" id="email-label">Email: </label><br>
+                <input type="email" name="email" id="email" placeholder="yourmail@lalala.com" required> <br>
+
+                <label for="number" id="number-label">Phone number:</label><br>
+                <input type="number" name="number" id="number" min="5400000000" max="5499999900" placeholder="5445468714"> <br>
+                
+                <fieldset>
+                    <legend>Are you legal?</legend>
+
+                    <input type="radio" name="legality" id="legar" value="yes">
+                    <label for="legal"><strong>Yes,</strong> I am.</label>
+                    <br>
+                
+                    <input type="radio" name="legality" id="ilegal" value="no" checked>
+                    <label for="ilegal"><strong>No,</strong> I´m not.</label>
+                </fieldset>
+            </fieldset>
+            
+            <fieldset>
+                <legend><h2>What are the ingredients of a beer, acording to the 1516 German Purity Law (The Reinheitsgebot)</h2></legend>
+
+                <input type="checkbox" name="ingredient" id="water" value="water">
+                <label for="water">water</label><br>
+                
+                <input type="checkbox" name="ingredient" id="rice" value="rice">
+                <label for="rice">rice</label><br>
+                
+                <input type="checkbox" name="ingredient" id="barley" value="barley">
+                <label for="barley">barley</label><br>
+
+                <input type="checkbox" name="ingredient" id="alcohol" value="alcohol">
+                <label for="alcohol">alcohol</label><br>
+
+                <input type="checkbox" name="ingredient" id="hops" value="hops">
+                <label for="hops">hops</label><br>
+
+                <input type="checkbox" name="ingredient" id="corn" value="corn">
+                <label for="corn">corn</label><br>
+
+                <input type="checkbox" name="ingredient" id="coriander" value="coriander">
+                <label for="coriander">coriander</label><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>A witbier is made with barley malt and wich other grain?</h2></legend>
+
+                <label for="dropdown">
+                <select name="witbierIngredient" id="dropdown">
+                    <option value="" disabled selected>Select the right choice</option>
+                    <option value="malted corn">malted corn</option>
+                    <option value="raw corn">raw corn</option>
+                    <option value="malted wheat">malted wheat</option>
+                    <option value="raw wheat">raw wheat</option>
+                    <option value="rice">rice</option>
+                </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>Please, tell us. What do you know about beer?</h2></legend>
+                
+                <label for="feedback">
+                    <textarea name="feedback" id="feedback" cols="50" rows="10" placeholder="I know everything about beer!"></textarea>
+                </label>
+            </fieldset>
+            
+            <input type="submit" value="Send Beer Survey" id="submit">
+        </form>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
