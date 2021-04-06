@@ -1,9 +1,35 @@
+* {
+    box-sizing: content-box;
+}
 body {
    font-family: 'Roboto', sans-serif;
+   background-color:slategray;
+}
+
+body>* {
+    max-width: 850px;
+    margin: 20px auto;
+    background-color:ghostwhite;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+header>*, footer {
+    text-align: center;
 }
 
 h1 {
     text-transform: capitalize;
+    text-decoration-line: underline;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.botMargin input {
+    margin: 0.5em 0 1em 0;
+}
+
+#description {
+    font-size: large;
+    font-style: italic;
+}
